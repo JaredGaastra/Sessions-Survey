@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Choose_form{% endblock %}
+{% block content %}
+
+<h1>Select A Survey</h1>
+<p>choose a form that you would like to fill out today</p>
+<form action="" method="post" name="choose">
+    <label for="survey-type">Choose a survey:</label>
+    <select id="survey-type" name="survey-types">
+      <option value="satisfaction">Satisfaction Survey</option>
+      <option value="personality">Personality Quiz</option>
+    </select>
+    <button type="submit">Start Survey</button>
+</form>
+
+
+{% endblock %}
